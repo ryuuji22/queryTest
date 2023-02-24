@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "60cc775e-d967-4da6-95dd-a65a741ddd87",
+		"name": "QueryTestAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1era Pregunta",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/query-api/segments/a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"query-api",
+						"segments",
+						"a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2da Pregunta",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/query-api/segments/departments/a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"query-api",
+						"segments",
+						"departments",
+						"a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3era Pregunta",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/query-api/departments/employees/maxsalary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"query-api",
+						"departments",
+						"employees",
+						"maxsalary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4ta Pregunta",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/query-api/employees/managers?years=15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"query-api",
+						"employees",
+						"managers"
+					],
+					"query": [
+						{
+							"key": "years",
+							"value": "15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5ta Pregunta",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/query-api/departments/averagesalaries?employees=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"query-api",
+						"departments",
+						"averagesalaries"
+					],
+					"query": [
+						{
+							"key": "employees",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6ta Pregunta",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/query-api/countries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"query-api",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,32 @@
+version: '2'
+
+services:
+  app:
+    image: 'docker-spring-boot-mysql:latest'
+    ports:
+     - "8001:8001"
+    build:
+      context: .
+    container_name: app
+    depends_on:
+      - db
+    environment:
+      - TZ=America/Guayaquil
+      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/myhotel
+      - SPRING_DATASOURCE_USERNAME=admin
+      - SPRING_DATASOURCE_PASSWORD=admin
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=none
+      
+  db:
+    container_name: db
+    image: mysql:8.0.32
+    ports:
+        - "33061:3306"
+    volumes:
+      - "./scripts/myhotel-test.sql:/docker-entrypoint-initdb.d/1.sql"
+    environment:
+        MYSQL_ROOT_USER: root
+        MYSQL_ROOT_PASSWORD: secret
+        MYSQL_DATABASE: myhotel
+        MYSQL_USER: admin
+        MYSQL_PASSWORD: admin

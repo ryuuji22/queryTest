@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: queryTest
+  jpa:
+    database: MYSQL
+    show-sql: true
+    generate-ddl: false
+    hibernate:
+      ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO}
+  sql:
+    init:
+      mode: ALWAYS
+      continue-on-error: true
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driverClassName: com.mysql.cj.jdbc.Driver
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher 
+server:
+  port: 8001
