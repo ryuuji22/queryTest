@@ -23,4 +23,4 @@ Se utilizaron las siguientes herramientas:
 
 ## Documentación API
 Una vez ejecutada la aplicación, se encontrará disponible un **Swagger** en la ruta http://localhost:8001/swagger-ui.html#/
-A su vez el documento **RentalAPI.postman_collection.json** contiene una colección de ejemplo de las llamadas a cada endpoint para Postman. 
+A su vez el documento **QueryTestAPI.postman_collection.json** contiene una colección de ejemplo de las llamadas a cada endpoint para Postman. 
